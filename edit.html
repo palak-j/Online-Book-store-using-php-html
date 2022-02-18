@@ -1,0 +1,61 @@
+<html>
+
+<head>
+<style>
+body {
+    text-align: center;
+}
+input {
+  border-style: inset;
+}
+</style>
+</head>
+
+<body>
+
+<h1> Enter details of the book to change Trade type or Availability</h1>
+<form action="auth_edit.php" method="post">
+  Email: <br>
+  <input type="text" name="email">
+  <br>
+  <br>
+  Password: <br>
+  <input type="text" name="password">
+  <br>
+  <br>
+  Author: <br>
+  <input type="text" name="author">
+  <br>
+  <br>
+  Book name: <br>
+  <input type="text" name="book_name">
+  <br>
+  <br>
+  
+  <h2> Update Status for: </h2><br>
+  Trade form:<br>
+ <input list="trade" name="trade_status">
+  <datalist id="trade">
+  <option value="Exchange">
+  <option value="Free">
+  </datalist>
+  <br>
+  <br>
+  Availability:<br>
+  <input list="available" name="availability">
+  
+  <datalist id="available">
+  <option value="Y">
+  <option value="N">
+  </datalist>
+  <br>
+  <br>  
+
+  <br>
+  <input type="submit" name="submit">
+</form> 
+<br>
+<button style="display:block; margin: 0 auto;"><a href="reg.html">Logout</a></button>
+
+</body>
+</html>

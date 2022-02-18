@@ -1,0 +1,42 @@
+<html>
+
+<head>
+<style>
+body {
+    text-align: center;
+}
+input {
+  border-style: inset;
+}
+</style>
+</head>
+
+<body>
+
+<h1> Update Trade type or Availability</h1>
+<form action="update.php" method="post">
+  Trade form:<br>
+ <input list="trade" name="trade_status">
+  <datalist id="trade">
+  <option value="Exchange">
+  <option value="Free">
+  </datalist>
+  <br>
+  <br>
+  Availability:<br>
+  <input list="available" name="availability">
+  
+  <datalist id="available">
+  <option value="Y">
+  <option value="N">
+  </datalist>
+  <br>
+  <br><br>
+
+  <input type="submit" name="submit">
+</form> 
+<br>
+<button style="display:block; margin: 0 auto;"><a href="reg.html">Logout</a></button>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<html>
+
+<head>
+<style>
+body {
+    text-align: left;
+}
+input {
+  border-style: inset;
+}
+</style>
+</head>
+
+<body>
+
+<form action="auth.php" method="post">
+Email id: <br>
+  <input type="email" name="email">
+  <br>
+  <br>
+Password: <br>
+ <input type="password" id="pwd" name="password" minlength="8">
+ <input type="checkbox" onclick="myFunction()">Show Password
+
+  <br>
+  <br>
+<br>
+  <input type="submit" name="submit" value="Login">
+</form> 
+<br>
+<h2> New User? </h2>
+<h3><a href="reg.html"> Register here</a></h3>
+
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("pwd");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
+
+</body>
+</html>

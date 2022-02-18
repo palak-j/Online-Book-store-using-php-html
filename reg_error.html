@@ -1,0 +1,79 @@
+<html>
+
+<head>
+<style>
+body {
+    text-align: left;
+}
+input {
+  border-style: inset;
+}
+</style>
+</head>
+
+<body>
+
+<h2> New user? Register here</h2>
+
+<form action="reg.php" method="post">
+  Name: <br>
+  <input type="text" name="name" required>
+  <br>
+  <br>
+  Email id: <br>
+  <input type="email" name="email" required>
+  <br>
+  <br>
+  Phone: <br>
+ <input type="text" name="phone" required>
+  <br>
+  <br>
+
+  Password: <br>
+ 
+ <input type="password" id="pwd" name="password" minlength="8" required>
+  <input type="checkbox" onclick="myFunction()">Show Password
+
+  <br>
+  <br>
+  Confirm Password: <br>
+ <input type="password" id="cnf_pwd" name="cmf_password" minlength="8" required>
+  <input type="checkbox" onclick="myFunction1()">Show Password
+
+  <br>
+  <br>
+   <br>
+  <input type="submit" name="submit" value="Register">
+</form> 
+<h3>Passwords do not match</h3>
+
+
+<br>
+<h2> Already a user? </h2>
+<h3><a href="login.html"> Login here</a></h3>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("pwd");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+
+function myFunction1() {
+  var x = document.getElementById("cnf_pwd");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+
+</script>
+
+
+</body>
+</html>

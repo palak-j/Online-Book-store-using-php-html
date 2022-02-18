@@ -1,0 +1,76 @@
+<html>
+
+<head>
+<style>
+body {
+    text-align: center;
+}
+input {
+  border-style: inset;
+}
+</style>
+</head>
+
+<body>
+
+<h1> Submit your book</h1>
+<form action="submit.php" method="post">
+  Author: <br>
+  <input type="text" name="author">
+  <br>
+  <br>
+  Book name: <br>
+  <input type="text" name="book_name">
+  <br>
+  <br>
+  Category: <br>
+ <input list="cat" name="category">
+  <datalist id="cat">
+  <option value="Comic">
+  <option value="Fiction">
+  <option value="Drama">
+  <option value="Motivational">
+  </datalist>
+  <br>  
+ <br>
+
+  Condition: <br>
+ <input list="cond" name="book_condition">
+
+  <datalist id="cond">
+  <option value="Excellent">
+  <option value="Good">
+  <option value="Average">
+  <option value="Poor">
+  </datalist>
+  <br>
+  <br>
+
+  Submitted By: <br>
+ <input type="text" name="name">
+  <br>
+  <br>
+   Email id: <br>
+ <input type="text" name="email">
+  <br>
+  <br>
+   Contact number: <br>
+ <input type="text" name="phone">
+  <br>
+  <br>
+  Trade form:<br>
+ <input list="trade" name="trade_status">
+  
+  <datalist id="trade">
+  <option value="Exchange">
+  <option value="Free">
+  </datalist>
+  <br>
+  <br><br>
+  <input type="submit" name="submit">
+</form> 
+<br>
+<button style="display:block; margin: 0 auto;"><a href="reg.html">Logout</a></button>
+
+</body>
+</html>
